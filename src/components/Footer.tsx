@@ -29,8 +29,8 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <a href="mailto:icx.giki@aiesec.net" className="text-gray-300 hover:text-white transition-colors">
-                  icx.giki@aiesec.net
+                <a href="mailto: muhammad.nabeegh@aiesec.net" className="text-gray-300 hover:text-white transition-colors">
+                  muhammad.nabeegh@aiesec.net
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -76,7 +76,7 @@ export function Footer() {
               © 2025 AIESEC in GIKI – All Rights Reserved
             </p>
             <p className="text-gray-400 text-sm">
-              Made with ❤️ for global youth leadership
+              Made with ❤️ for global youth leadership and by lovelyyy tareeenn farheen nabeegh
             </p>
           </div>
         </div>

@@ -1,20 +1,28 @@
 import { Card } from "../ui/card"
 import { Button } from "../ui/button"
 import { Badge } from "../ui/badge"
-import { ArrowLeft, Home, Users, Bus, PartyPopper, MapPin, DollarSign, Clock, GraduationCap, Heart } from "lucide-react"
+import { ArrowLeft, Home, Users, Utensils, Bus, DollarSign, Clock, FileText, Download, ExternalLink, PartyPopper, MapPin, GraduationCap, Heart } from "lucide-react"
 import { useRouter } from "../../context/Router"
+import { LucideIcon } from "lucide-react"
+import { useEffect } from "react"
+import { motion } from "framer-motion"
 
 interface HyderabadMOUProps {
   title: string
   description: string
-  icon: React.ElementType
-  category: "Education" | "NGO"
+  icon: LucideIcon
+  category: string
   signedBy: string
   programFee?: string
 }
 
 export function HyderabadMOU({ title, description, icon: IconComponent, category, signedBy, programFee = "105 USD total program cost" }: HyderabadMOUProps) {
   const { navigate } = useRouter()
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
 
   const infoBlocks = [
     {

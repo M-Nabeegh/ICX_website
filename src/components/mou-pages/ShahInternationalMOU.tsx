@@ -3,9 +3,16 @@ import { Button } from "../ui/button"
 import { Badge } from "../ui/badge"
 import { ArrowLeft, Home, Users, Utensils, Bus, DollarSign, Clock, GraduationCap, FileText, Download, ExternalLink } from "lucide-react"
 import { useRouter } from "../../context/Router"
+import { useEffect } from "react"
+import { motion } from "framer-motion"
 
 export function ShahInternationalMOU() {
   const { navigate } = useRouter()
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
 
   const infoBlocks = [
     {
@@ -42,14 +49,24 @@ export function ShahInternationalMOU() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <motion.div 
+      className="min-h-screen bg-gray-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Header with Back Button */}
-      <div className="bg-white shadow-sm border-b">
+      <motion.div 
+        className="bg-white shadow-sm border-b sticky top-0 z-50"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <button
               onClick={() => navigate('home')}
-              className="flex items-center space-x-2 text-gray-600 hover:text-blue-900 transition-colors"
+              className="flex items-center space-x-2 text-gray-600 hover:text-blue-900 transition-all transform hover:scale-105 hover:bg-blue-50 px-4 py-2 rounded-lg"
             >
               <ArrowLeft className="w-5 h-5" />
               <span>Back to Home</span>
@@ -65,7 +82,7 @@ export function ShahInternationalMOU() {
             </Button>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -178,6 +195,6 @@ export function ShahInternationalMOU() {
           </div>
         </Card>
       </div>
-    </div>
+    </motion.div>
   )
 }
