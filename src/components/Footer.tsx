@@ -76,7 +76,7 @@ export function Footer() {
               © 2025 AIESEC in GIKI – All Rights Reserved
             </p>
             <p className="text-gray-400 text-sm">
-              Made with ❤️ for global youth leadership and by lovelyyy tareeenn farheen nabeegh
+              Made with ❤️ for global youth leadership and by ICX Trailblazers 25.26
             </p>
           </div>
         </div>
