@@ -13,54 +13,73 @@ export function Team() {
   const leadership = {
     name: "Muhammad Nabeegh",
     role: "Local Committee Vice President (LCVP) ICX",
-    description: "Nabeegh leads the ICX portfolio with exceptional vision and unwavering dedication that has transformed AIESEC in GIKI's impact. His strategic leadership and relentless work ethic have made ICX one of the most productive portfolios in the organization's history. Under his guidance, ICX achieved record-breaking results including 15 opens, 20+ IR partnerships, and unprecedented international recognition. In 2025, he made history by winning the prestigious Impact & Innovation Award, the first ICX award for AIESEC in GIKI. His commitment to excellence and ability to inspire his team have established new benchmarks for success, making ICX a beacon of productivity and global engagement.",
+    description:
+      "Nabeegh leads the ICX portfolio with exceptional vision and unwavering dedication that has transformed AIESEC in GIKI's impact. His strategic leadership and relentless work ethic have made ICX one of the most productive portfolios in the organization's history. Under his guidance, ICX achieved record-breaking results including 15 opens, 20+ IR partnerships, and unprecedented international recognition. In 2025, he made history by winning the prestigious Impact & Innovation Award, the first ICX award for AIESEC in GIKI. His commitment to excellence and ability to inspire his team have established new benchmarks for success, making ICX a beacon of productivity and global engagement.",
     icon: Award
   }
 
-  const teamMembers = [
+  // Team Leads & Directors (same design as before)
+  const teamLeadsAndDirectors = [
     {
       name: "Farheen Shaikh",
       role: "Team Leader B2B",
-      description: "Farheen drives corporate outreach across Pakistan. She negotiates and signs MOUs with organizations, ensuring sustainable partnerships. Her work expands ICX's reach and establishes AIESEC in GIKI as a trusted partner for businesses and institutions nationwide.",
+      description:
+        "Farheen drives corporate outreach across Pakistan. She negotiates and signs MOUs with organizations, ensuring sustainable partnerships. Her work expands ICX's reach and establishes AIESEC in GIKI as a trusted partner for businesses and institutions nationwide.",
       icon: Handshake,
       image: farheenImage
     },
     {
       name: "Lyla Ahmad",
       role: "Team Leader Global Relations",
-      description: "Lyla represents AIESEC in GIKI globally by conducting International Relations calls with AIESEC entities worldwide. She markets our projects, persuades international Exchange Participants to come to Pakistan, and builds strong global collaborations.",
+      description:
+        "Lyla represents AIESEC in GIKI globally by conducting International Relations calls with AIESEC entities worldwide. She markets our projects, persuades international Exchange Participants to come to Pakistan, and builds strong global collaborations.",
       icon: Globe,
       image: lylaImage
     },
     {
       name: "Aleena Rizwan",
       role: "Director Global Relations",
-      description: "Aleena strengthens our international partnerships alongside Lyla. She focuses on nurturing long-term relations with LCs worldwide, ensuring a steady flow of exchange participants into Pakistan.",
+      description:
+        "Aleena strengthens our international partnerships alongside Lyla. She focuses on nurturing long-term relations with LCs worldwide, ensuring a steady flow of exchange participants into Pakistan.",
       icon: Users,
       image: aleenaImage
     },
     {
       name: "Zainab Khan",
       role: "Director Marketing",
-      description: "Zainab crafts the digital voice of ICX. She designs campaigns, manages communications, and showcases the achievements of ICX to inspire trust and engagement—both locally and globally.",
+      description:
+        "Zainab crafts the digital voice of ICX. She designs campaigns, manages communications, and showcases the achievements of ICX to inspire trust and engagement—both locally and globally.",
       icon: Megaphone,
       image: zainabImage
     },
     {
       name: "Deepak Kumar",
       role: "Team Leader Partnership Facilitator",
-      description: "Deepak streamlines B2B outreach by researching, curating, and approaching potential partners. His groundwork makes it easier for the B2B team to expand collaborations and strengthen ICX's corporate network.",
+      description:
+        "Deepak streamlines B2B outreach by researching, curating, and approaching potential partners. His groundwork makes it easier for the B2B team to expand collaborations and strengthen ICX's corporate network.",
       icon: Search,
       image: deepakImage
     }
+  ]
+
+  // New Team Members (names only, no photos)
+  const teamMembers = [
+    { name: "Shanzay Zubair" },
+    { name: "Batol Fazazal" },
+    { name: "Zainab Malik" },
+    { name: "Faizan" },
+    { name: "Mahad" },
+    { name: "Kashmala Amer" }
   ]
 
   return (
     <section id="team" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Meet Our Team – Trailblazers</h2>
-          <div className="w-24 h-1 bg-blue-900 mx-auto mb-8"></div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Meet Our Team – Trailblazers
+          </h2>
+          <div className="w-24 h-1 bg-blue-900 mx-auto mb-8" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Dedicated leaders driving global exchange and creating meaningful impact
           </p>
@@ -79,7 +98,7 @@ export function Team() {
                       alt="Muhammad Nabeegh - LCVP ICX"
                       className="w-full h-auto object-cover aspect-[4/5]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-3xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-3xl" />
                   </div>
                 </div>
               </div>
@@ -99,12 +118,19 @@ export function Team() {
           </Card>
         </div>
 
-        {/* Team Leads & Directors */}
+        {/* Team Leads, Directors & Members */}
         <div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Team Leads & Directors</h3>
-          <div className="space-y-4">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="p-4 bg-white hover:shadow-lg transition-shadow duration-300 border-gray-200">
+          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Team Leads & Directors
+          </h3>
+
+          {/* Team Leads & Directors cards (same as before) */}
+          <div className="space-y-4 mb-10">
+            {teamLeadsAndDirectors.map((member, index) => (
+              <Card
+                key={index}
+                className="p-4 bg-white hover:shadow-lg transition-shadow duration-300 border-gray-200"
+              >
                 <div className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
                     {member.image ? (
@@ -129,11 +155,30 @@ export function Team() {
                         <p className="text-blue-900 font-medium text-left">{member.role}</p>
                       </div>
                     </div>
-                    <p className="text-gray-600 leading-relaxed text-left">{member.description}</p>
+                    <p className="text-gray-600 leading-relaxed text-left">
+                      {member.description}
+                    </p>
                   </div>
                 </div>
               </Card>
             ))}
+          </div>
+
+          {/* Team Members – names only, under same section */}
+          <div className="mt-6">
+            <h4 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
+              Team Members
+            </h4>
+            <div className="flex flex-wrap justify-center gap-3">
+              {teamMembers.map((member, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm text-sm font-medium text-gray-800"
+                >
+                  {member.name}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
