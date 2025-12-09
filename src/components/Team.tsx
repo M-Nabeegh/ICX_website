@@ -2,7 +2,7 @@ import { Card } from "./ui/card"
 import { Badge } from "./ui/badge"
 import { ImageWithFallback } from "./figma/ImageWithFallback"
 import { Award, Users, Globe, Megaphone, Search, Handshake } from "lucide-react"
-import nabeeghImage from "IMG_0441.JPG"
+import nabeeghImage from "figma:asset/IMG_0441.JPG"
 import zainabImage from "figma:asset/4aa8a9519eafae579d9deeac8164761137ca02a9.png"
 import farheenImage from "figma:asset/c4675916b1b9678f657eaeab2746ec726656851f.png"
 import aleenaImage from "figma:asset/13cffc912a0d242ca076019981ba64c244f0c497.png"
@@ -18,7 +18,7 @@ export function Team() {
     icon: Award
   }
 
-  // Team Leads & Directors (same design as before)
+  // Team Leads & Directors (with photos & descriptions)
   const teamLeadsAndDirectors = [
     {
       name: "Farheen Shaikh",
@@ -62,7 +62,7 @@ export function Team() {
     }
   ]
 
-  // New Team Members (names only, no photos)
+  // Team Members – names only, no photos
   const teamMembers = [
     { name: "Shanzay Zubair" },
     { name: "Batol Fazazal" },
@@ -75,6 +75,7 @@ export function Team() {
   return (
     <section id="team" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Meet Our Team – Trailblazers
@@ -85,42 +86,40 @@ export function Team() {
           </p>
         </div>
 
-     {/* Leadership Section */}
-<div className="mb-16">
-  <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Leadership</h3>
-  <Card className="p-6 bg-white border-blue-200 shadow-md">
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-      <div className="lg:col-span-1">
-        <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl border-4 border-blue-900/15 shadow-lg w-64 mx-auto">
-            <img
-              src={nabeeghImage}
-              alt="Muhammad Nabeegh - LCVP ICX"
-              className="w-full h-auto object-cover aspect-[4/5]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-2xl"></div>
-          </div>
+        {/* Leadership Section (smaller) */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Leadership</h3>
+          <Card className="p-6 bg-white border-blue-200 shadow-md">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+              <div className="lg:col-span-1">
+                <div className="relative">
+                  <div className="relative overflow-hidden rounded-2xl border-4 border-blue-900/15 shadow-lg w-64 mx-auto">
+                    <img
+                      src={nabeeghImage}
+                      alt="Muhammad Nabeegh - LCVP ICX"
+                      className="w-full h-auto object-cover aspect-[4/5]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-2xl" />
+                  </div>
+                </div>
+              </div>
+              <div className="lg:col-span-2 space-y-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                    <leadership.icon className="w-5 h-5 text-blue-900" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900">{leadership.name}</h4>
+                    <p className="text-md text-blue-900 font-medium">{leadership.role}</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {leadership.description}
+                </p>
+              </div>
+            </div>
+          </Card>
         </div>
-      </div>
-
-      <div className="lg:col-span-2 space-y-3">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
-            <leadership.icon className="w-5 h-5 text-blue-900" />
-          </div>
-          <div>
-            <h4 className="text-xl font-bold text-gray-900">{leadership.name}</h4>
-            <p className="text-md text-blue-900 font-medium">{leadership.role}</p>
-          </div>
-        </div>
-        <p className="text-gray-700 text-sm leading-relaxed">
-          {leadership.description}
-        </p>
-      </div>
-    </div>
-  </Card>
-</div>
-</div>
 
         {/* Team Leads, Directors & Members */}
         <div>
@@ -128,7 +127,7 @@ export function Team() {
             Team Leads & Directors
           </h3>
 
-          {/* Team Leads & Directors cards (same as before) */}
+          {/* Team Leads & Directors cards */}
           <div className="space-y-4 mb-10">
             {teamLeadsAndDirectors.map((member, index) => (
               <Card
@@ -168,7 +167,7 @@ export function Team() {
             ))}
           </div>
 
-          {/* Team Members – names only, under same section */}
+          {/* Team Members – names only */}
           <div className="mt-6">
             <h4 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
               Team Members
