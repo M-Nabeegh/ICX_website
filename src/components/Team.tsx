@@ -85,7 +85,7 @@ export function Team() {
           </p>
         </div>
 
-       {/* Leadership Section */}
+     {/* Leadership Section */}
 <div className="mb-16">
   <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Leadership</h3>
   <Card className="p-6 bg-white border-blue-200 shadow-md">
@@ -119,6 +119,7 @@ export function Team() {
       </div>
     </div>
   </Card>
+</div>
 </div>
 
         {/* Team Leads, Directors & Members */}
