@@ -2,7 +2,7 @@ import { Card } from "./ui/card"
 import { Badge } from "./ui/badge"
 import { ImageWithFallback } from "./figma/ImageWithFallback"
 import { Award, Trophy, Target, TrendingUp, Calendar, Star } from "lucide-react"
-import awardImage from "figma:asset/d3ac4ddd349559389e04926dd4cd58f17e997cf5.png"
+import awardImage from "figma:asset/7d030419-80e6-4fba-b268-f8042bdb6cee.JPG"
 
 export function Achievements() {
   const milestones = [
