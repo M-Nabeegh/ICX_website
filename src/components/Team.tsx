@@ -85,38 +85,41 @@ export function Team() {
           </p>
         </div>
 
-        {/* Leadership Section */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Leadership</h3>
-          <Card className="p-8 bg-white border-blue-200 shadow-lg">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-              <div className="lg:col-span-1">
-                <div className="relative">
-                  <div className="relative overflow-hidden rounded-3xl border-4 border-blue-900/20 shadow-xl">
-                    <img
-                      src={nabeeghImage}
-                      alt="Muhammad Nabeegh - LCVP ICX"
-                      className="w-full h-auto object-cover aspect-[4/5]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-3xl" />
-                  </div>
-                </div>
-              </div>
-              <div className="lg:col-span-2 space-y-4">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <leadership.icon className="w-6 h-6 text-blue-900" />
-                  </div>
-                  <div>
-                    <h4 className="text-2xl font-bold text-gray-900">{leadership.name}</h4>
-                    <p className="text-lg text-blue-900 font-medium">{leadership.role}</p>
-                  </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">{leadership.description}</p>
-              </div>
-            </div>
-          </Card>
+       {/* Leadership Section */}
+<div className="mb-16">
+  <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Leadership</h3>
+  <Card className="p-6 bg-white border-blue-200 shadow-md">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+      <div className="lg:col-span-1">
+        <div className="relative">
+          <div className="relative overflow-hidden rounded-2xl border-4 border-blue-900/15 shadow-lg w-64 mx-auto">
+            <img
+              src={nabeeghImage}
+              alt="Muhammad Nabeegh - LCVP ICX"
+              className="w-full h-auto object-cover aspect-[4/5]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent rounded-2xl"></div>
+          </div>
         </div>
+      </div>
+
+      <div className="lg:col-span-2 space-y-3">
+        <div className="flex items-center space-x-3">
+          <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+            <leadership.icon className="w-5 h-5 text-blue-900" />
+          </div>
+          <div>
+            <h4 className="text-xl font-bold text-gray-900">{leadership.name}</h4>
+            <p className="text-md text-blue-900 font-medium">{leadership.role}</p>
+          </div>
+        </div>
+        <p className="text-gray-700 text-sm leading-relaxed">
+          {leadership.description}
+        </p>
+      </div>
+    </div>
+  </Card>
+</div>
 
         {/* Team Leads, Directors & Members */}
         <div>
