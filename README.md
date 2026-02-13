@@ -1,7 +1,6 @@
 
-  # Professional Website UI Design (Copy) (Copy)
-
-  This is a code bundle for Professional Website UI Design (Copy) (Copy). The original project is available at https://www.figma.com/design/VHSLMeKjsmpjYnAlmnbPHC/Professional-Website-UI-Design--Copy---Copy-.
+  # ICX KI WEBSITE
+https://icx-giki.netlify.app
 
   ## Running the code
 
