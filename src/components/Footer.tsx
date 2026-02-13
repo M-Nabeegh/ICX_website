@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
-              <img 
+              <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3iJ5umUMIDZYbyfdIG7y5wZVE82O_cuycx7EQdY58hHC3MpZd_VXpABahjlgF8t_Oug&usqp=CAU"
                 alt="AIESEC Logo"
                 className="w-12 h-12 object-contain bg-white rounded-lg p-1"
@@ -29,8 +29,8 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <a href="mailto: muhammad.nabeegh@aiesec.net" className="text-gray-300 hover:text-white transition-colors">
-                  muhammad.nabeegh@aiesec.net
+                <a href="mailto: aleena.rizwan@aiesec.net" className="text-gray-300 hover:text-white transition-colors">
+                  aleena.rizwan@aiesec.net
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -46,17 +46,17 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-xl font-bold">Follow Us</h4>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.instagram.com/aiesecxgiki_internal?igsh=MzFtbjZ5YW1sYW10" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/lc.giki?igsh=MTkyandtaHFtM2ZjMg=="
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/aiesecxgiki?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/aiesecxgiki?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
@@ -76,7 +76,7 @@ export function Footer() {
               © 2025 AIESEC in GIKI – All Rights Reserved
             </p>
             <p className="text-gray-400 text-sm">
-              Made with ❤️ for global youth leadership and by ICX Trailblazers 25.26
+              Made with ❤️ for Global Youth Leadership and by iCX 26.27
             </p>
           </div>
         </div>
