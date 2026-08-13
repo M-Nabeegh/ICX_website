@@ -227,57 +227,44 @@ export function Partnerships() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <h4 className="text-2xl font-bold">📚 IR & Opportunity Booklets</h4>
+                    <h4 className="text-2xl font-bold">📚 Opportunity Booklets</h4>
                   </div>
                   <p className="text-green-100 mb-6 text-base">
-                    Download comprehensive IR (International Relations) booklets and opportunity guidelines for each program.
+                    Download detailed opportunity booklets and program guidelines for each of our active partnerships.
                   </p>
 
-                  <div className="space-y-2 mb-6">
-                    <div className="text-xs font-semibold uppercase tracking-wider text-green-200">Opportunity Booklets</div>
+                  <div className="space-y-2">
                     <div className="grid grid-cols-1 gap-2">
                       <a 
                         href="https://drive.google.com/file/d/12dNbvsfdQZPtILiDwe3paPGfoRnMyZkG/view?usp=share_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between bg-green-800/60 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors border border-green-500/30"
+                        className="flex items-center justify-between bg-green-800/60 hover:bg-green-800 text-white px-4 py-3 rounded-xl text-sm font-medium transition-colors border border-green-500/30"
                       >
-                        <span>🏫 Shah International School</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>🏫 Shah International School Booklet</span>
+                        <ExternalLink className="w-4 h-4" />
                       </a>
                       <a 
                         href="https://drive.google.com/file/d/1t-6WUq_V132_SE4YwZeEU4jtupXYIKkn/view?usp=share_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between bg-green-800/60 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors border border-green-500/30"
+                        className="flex items-center justify-between bg-green-800/60 hover:bg-green-800 text-white px-4 py-3 rounded-xl text-sm font-medium transition-colors border border-green-500/30"
                       >
-                        <span>🏢 Plush Natural</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>🏢 Plush Natural Booklet</span>
+                        <ExternalLink className="w-4 h-4" />
                       </a>
                       <a 
                         href="https://drive.google.com/file/d/1dcVw-_JUpFE8K_fYH4OSAf-CEUT7WeJE/view?usp=share_link" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between bg-green-800/60 hover:bg-green-800 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors border border-green-500/30"
+                        className="flex items-center justify-between bg-green-800/60 hover:bg-green-800 text-white px-4 py-3 rounded-xl text-sm font-medium transition-colors border border-green-500/30"
                       >
-                        <span>❤️ Saba Trust</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>❤️ Saba Trust Booklet</span>
+                        <ExternalLink className="w-4 h-4" />
                       </a>
                     </div>
                   </div>
                 </div>
-
-                <a 
-                  href="https://drive.google.com/file/d/1KNh7D5gsA0n-3vO9trvsOiu7ccv1KfgH/view?usp=drive_link" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-white text-green-700 px-6 py-3 rounded-lg font-bold hover:bg-green-50 transition-colors group w-full text-center"
-                >
-                  General IR Booklet
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </a>
               </div>
             </div>
 
