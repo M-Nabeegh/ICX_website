@@ -39,7 +39,7 @@ export function Achievements() {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Achievements</h2>
           <div className="w-24 h-1 bg-blue-900 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Celebrating our milestones and the impact we've created in 2025
+            Celebrating our milestones and the impact we've created in 2026
           </p>
         </div>
 
@@ -84,9 +84,9 @@ export function Achievements() {
         {/* 2025 Milestones */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our 2025 Milestones</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our 2026 Milestones</h3>
             <p className="text-lg text-gray-600">
-              In just the first six months of 2025, ICX achieved unprecedented success
+              In just the first six months of 2026, ICX achieved unprecedented success
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export function Achievements() {
               <Calendar className="w-8 h-8" />
             </div>
             <blockquote className="text-2xl font-medium leading-relaxed">
-              "2025 has been a year of breaking barriers and setting new standards.
+              "2026 has been a year of breaking barriers and setting new standards.
               Our team's dedication to excellence has put AIESEC in GIKI on the global map."
             </blockquote>
             <p className="text-blue-200">— ICX Portfolio Team</p>

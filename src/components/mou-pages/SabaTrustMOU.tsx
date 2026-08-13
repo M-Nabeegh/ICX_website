@@ -1,7 +1,7 @@
 import { Card } from "../ui/card"
 import { Button } from "../ui/button"
 import { Badge } from "../ui/badge"
-import { ArrowLeft, Home, Heart, GraduationCap, Clock, MapPin, ExternalLink, CheckCircle2, Utensils, Bus } from "lucide-react"
+import { ArrowLeft, Home, Heart, GraduationCap, Clock, MapPin, ExternalLink, CheckCircle2, Utensils, Bus, FileText, Download } from "lucide-react"
 import { useRouter } from "../../context/Router"
 import { useEffect } from "react"
 import { motion } from "framer-motion"
@@ -14,6 +14,7 @@ export function SabaTrustMOU() {
   }, [])
 
   const opportunityUrl = "https://aiesec.org/opportunity/global-volunteer/1336201"
+  const bookletUrl = "https://drive.google.com/file/d/1dcVw-_JUpFE8K_fYH4OSAf-CEUT7WeJE/view?usp=share_link"
 
   const infoBlocks = [
     {
@@ -42,10 +43,10 @@ export function SabaTrustMOU() {
       description: "Host family placement & local meals"
     },
     {
-      icon: ExternalLink,
-      label: "AIESEC Portal",
-      description: "View official opportunity listing",
-      link: opportunityUrl
+      icon: FileText,
+      label: "Opportunity Booklet",
+      description: "Download full opportunity booklet",
+      link: bookletUrl
     }
   ]
 
@@ -110,16 +111,25 @@ export function SabaTrustMOU() {
           </p>
         </div>
 
-        {/* Apply Now Button */}
+        {/* Action Buttons */}
         <div className="text-center mb-16 flex flex-col sm:flex-row justify-center gap-4">
           <a 
             href={opportunityUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-purple-700 hover:bg-purple-800 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center justify-center bg-purple-700 hover:bg-purple-800 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Apply Now on AIESEC Portal
             <ExternalLink className="w-5 h-5 ml-2" />
+          </a>
+          <a 
+            href={bookletUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-white border-2 border-purple-700 text-purple-800 hover:bg-purple-50 px-8 py-4 text-lg font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+          >
+            <Download className="w-5 h-5 mr-2" />
+            View Opportunity Booklet
           </a>
         </div>
 

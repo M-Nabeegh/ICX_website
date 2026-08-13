@@ -14,6 +14,9 @@ export function ShahInternationalMOU() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
+  const opportunityUrl = "https://expa.aiesec.org/opportunities/1331207"
+  const bookletUrl = "https://drive.google.com/file/d/12dNbvsfdQZPtILiDwe3paPGfoRnMyZkG/view?usp=share_link"
+
   const infoBlocks = [
     {
       icon: Home,
@@ -44,7 +47,7 @@ export function ShahInternationalMOU() {
       icon: FileText,
       label: "Opportunity Booklet",
       description: "Discover the complete program details",
-      link: "https://drive.google.com/file/d/1k8k0yDXN502RM4lRARs9lYHkVKsimuZw/view?usp=drive_link"
+      link: bookletUrl
     }
   ]
 
@@ -106,13 +109,26 @@ export function ShahInternationalMOU() {
           </p>
         </div>
 
-        {/* Apply Now Button */}
-        <div className="text-center mb-16">
-          <Button 
-            className="bg-blue-900 hover:bg-blue-800 text-white px-12 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+        {/* Apply Now & Opportunity Booklet Buttons */}
+        <div className="text-center mb-16 flex flex-col sm:flex-row justify-center gap-4">
+          <a 
+            href={opportunityUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
-            Apply Now - Join the Program
-          </Button>
+            Apply Now on AIESEC Portal
+            <ExternalLink className="w-5 h-5 ml-2" />
+          </a>
+          <a 
+            href={bookletUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-white border-2 border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-4 text-lg font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+          >
+            <Download className="w-5 h-5 mr-2" />
+            View Opportunity Booklet
+          </a>
         </div>
 
         {/* Info Blocks */}

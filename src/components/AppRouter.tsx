@@ -10,11 +10,6 @@ import { Footer } from "./Footer"
 import { ShahInternationalMOU } from "./mou-pages/ShahInternationalMOU"
 import { PlushNaturalMOU } from "./mou-pages/PlushNaturalMOU"
 import { SabaTrustMOU } from "./mou-pages/SabaTrustMOU"
-import { HITMSMOU } from "./mou-pages/HITMSMOU"
-import { IIUMOU } from "./mou-pages/IIUMOU"
-import { PakUraanMOU } from "./mou-pages/PakUraanMOU"
-import { TalpurMOU } from "./mou-pages/TalpurMOU"
-import { IConsultMOU } from "./mou-pages/iConsultMOU"
 
 export function AppRouter() {
   const { currentRoute } = useRouter()
@@ -43,16 +38,6 @@ export function AppRouter() {
       return <PlushNaturalMOU />
     case 'mou-sabatrust':
       return <SabaTrustMOU />
-    case 'mou-hitms':
-      return <HITMSMOU />
-    case 'mou-iiui':
-      return <IIUMOU />
-    case 'mou-pakuraan':
-      return <PakUraanMOU />
-    case 'mou-talpur':
-      return <TalpurMOU />
-    case 'mou-iconsult':
-      return <IConsultMOU />
     case 'home':
     default:
       return <HomePage />

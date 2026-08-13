@@ -98,12 +98,12 @@ export function Products() {
         {/* Stats Section */}
         <div className="mt-20 bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl p-8 text-white">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4">2025 Impact</h3>
+            <h3 className="text-3xl font-bold mb-4">2026 Impact</h3>
             <p className="text-blue-100">Making a difference through global exchange</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">6</div>
+              <div className="text-4xl font-bold mb-2">3</div>
               <div className="text-blue-100">MOUs Signed</div>
             </div>
             <div>
