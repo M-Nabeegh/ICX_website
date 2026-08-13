@@ -1,66 +1,73 @@
 import { Card } from "./ui/card"
 import { Badge } from "./ui/badge"
 import { ImageWithFallback } from "./figma/ImageWithFallback"
-import { Award, Users, Globe, Megaphone, Search, Handshake } from "lucide-react"
-import nabeeghImage from "../assets/IMG_0441.JPG"
-import farheenImage from "../assets/c4675916b1b9678f657eaeab2746ec726656851f.png"
+import { Award, Users, Globe, Megaphone, Search, Handshake, ShieldCheck } from "lucide-react"
 import aleenaImage from "../assets/13cffc912a0d242ca076019981ba64c244f0c497.png"
-import salwaImage from "../assets/fecde90a-4a22-46fc-949c-4f23a8645454.jpg"
-import zainabImage from "../assets/WhatsApp Image 2026-02-06 at 13.13.14.jpeg"
-import shanzayImage from "../assets/WhatsApp Image 2026-02-06 at 19.54.17.jpeg";
-import basimImage from "../assets/90b76ce7-9853-438b-ae28-aab23a50acab.jpg"
+import salwaImage from "../assets/salwa.jpg"
+import zainabImage from "../assets/zainab.jpeg"
+import fatimaImage from "../assets/fatima.jpeg"
+import hibaImage from "../assets/hiba.JPG"
+import muhibImage from "../assets/muhib.png"
+
 export function Team() {
   const leadership = {
     name: "Aleena Rizwan",
     role: "Local Committee Vice President iCX",
     description:
       "Aleena leads the iCX portfolio with an exceptional vision and an unwavering dedication that aims to transform AIESEC in GIKI's impact. Her strategic leadership and relentless work ethic aim to make iCX one of the most productive portfolios in the organization's history.",
-    icon: Award
-
+    icon: Award,
+    image: aleenaImage
   }
 
-  // Team Leads & Directors (with photos & descriptions)
+  // Team Leads & Directors
   const teamLeadsAndDirectors = [
-
     {
       name: "Zainab Ahmed Malik",
-      role: "Global Partnership Lead",
+      role: "Collaboration Ambassador",
       description:
-        "Zainab represents AIESEC in GIKI globally by setting up International Relations calls with AIESEC entities worldwide. She markets our projects and builds strong global collaborations.",
-      icon: Globe,
+        "Zainab drives outreach across Pakistan ensuring sustainable B2B partnerships. Her work expands iCX's reach and establishes AIESEC in GIKI as a trusted partner for NGOs and organizations region wide.",
+      icon: Handshake,
       image: zainabImage
     },
     {
-      name: "Salwa",
-      role: "International Relations Engagement Lead",
+      name: "Fatima Asad Awan",
+      role: "Partnership & Knowledge Manager",
       description:
-        "Salwa represents AIESEC in GIKI by hosting engaging virtual calls with exchange participants and gives them a glimpse into the exchange experience.",
-      icon: Search,
+        "Fatima focuses on nurturing relations with companies, startups, and institutions nationwide, managing knowledge bases and ensuring steady exchange opportunities for AIESEC in GIKI.",
+      icon: Megaphone,
+      image: fatimaImage
+    },
+    {
+      name: "Salwa",
+      role: "Global Partnership Lead",
+      description:
+        "Salwa represents AIESEC in GIKI globally by setting up International Relations calls with AIESEC entities worldwide. She markets our projects and builds strong global collaborations.",
+      icon: Globe,
       image: salwaImage
     },
-
     {
-      name: "Basim Aman Malik",
-      role: "Partnership Manager",
+      name: "Hiba Iftikhar",
+      role: "IR Engagement Lead",
       description:
-        "Basim strengthens our national partnerships. He focuses on nurturing relations with companies and startups nationwide, ensuring a steady flow of exchange opportunities for AIESEC in GIKI.",
-      icon: Megaphone,
-      image: basimImage
+        "Hiba represents AIESEC in GIKI by hosting engaging virtual calls with exchange participants and gives them a glimpse into the exchange experience.",
+      icon: Search,
+      image: hibaImage
     },
-
     {
-      name: "Shanzay Zubair",
-      role: "Collaboration Ambassador",
+      name: "Muhib e Ali Naqvi",
+      role: "IR Manager",
       description:
-        "Shanzay drives outreach across Pakistan ensuring sustainable B2B partnerships. Her work expands iCX's reach and establishes AIESEC in GIKI as a trusted partner for NGOs and organizations region wide.",
-      icon: Handshake,
-      image: shanzayImage
-    },
+        "Muhib oversees International Relations management and entity communications, fostering active partnerships and supporting seamless exchange participant experiences.",
+      icon: Users,
+      image: muhibImage
+    }
   ]
 
-  // Team Members – names only, no photos
+  // Team Members
   const teamMembers = [
-    { name: "Ayaan Ahmed Dodhy" }, { name: "Abdul Haseeb" }
+    { name: "Noor e Harram" },
+    { name: "Mariam Mannan" },
+    { name: "Mustafa Farrukh" }
   ]
 
   return (
@@ -77,7 +84,7 @@ export function Team() {
           </p>
         </div>
 
-        {/* Leadership Section (smaller) */}
+        {/* Leadership Section */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Leadership</h3>
           <Card className="p-5 bg-white border-blue-200 shadow-md max-w-4xl mx-auto">
@@ -85,8 +92,8 @@ export function Team() {
               <div className="flex-shrink-0 mx-auto sm:mx-0">
                 <div className="relative overflow-hidden rounded-xl border-2 border-blue-900/10 shadow-md w-24 h-32">
                   <img
-                    src={aleenaImage}
-                    alt="Muhammad Nabeegh - LCVP ICX"
+                    src={leadership.image}
+                    alt={`${leadership.name} - ${leadership.role}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -109,14 +116,13 @@ export function Team() {
           </Card>
         </div>
 
-        {/* Team Leads, Directors & Members */}
+        {/* Team Leads & Directors */}
         <div>
           <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Team Leads & Directors
           </h3>
 
-          {/* Team Leads & Directors cards */}
-          <div className="space-y-4 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {teamLeadsAndDirectors.map((member, index) => (
               <Card
                 key={index}
@@ -131,22 +137,22 @@ export function Team() {
                         className="w-16 h-16 object-cover rounded-xl bg-gray-50"
                       />
                     ) : (
-                      <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center">
-                        <member.icon className="w-8 h-8 text-gray-400" />
+                      <div className="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center border border-blue-100">
+                        <member.icon className="w-8 h-8 text-blue-900 opacity-75" />
                       </div>
                     )}
                   </div>
                   <div className="flex-1 text-left min-w-0">
-                    <div className="flex items-start gap-2 mb-2">
-                      <div className="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <member.icon className="w-3 h-3 text-blue-900" />
+                    <div className="flex items-start gap-2 mb-1">
+                      <div className="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <member.icon className="w-3.5 h-3.5 text-blue-900" />
                       </div>
                       <div className="text-left min-w-0">
                         <h4 className="font-bold text-gray-900 text-left">{member.name}</h4>
-                        <p className="text-blue-900 font-medium text-left">{member.role}</p>
+                        <p className="text-blue-900 font-medium text-sm text-left">{member.role}</p>
                       </div>
                     </div>
-                    <p className="text-gray-600 leading-relaxed text-left">
+                    <p className="text-gray-600 text-sm leading-relaxed text-left">
                       {member.description}
                     </p>
                   </div>
@@ -156,7 +162,7 @@ export function Team() {
           </div>
 
           {/* Team Members – names only */}
-          <div className="mt-6">
+          <div className="mt-8">
             <h4 className="text-2xl font-semibold text-gray-900 mb-4 text-center">
               Team Members
             </h4>
@@ -164,7 +170,7 @@ export function Team() {
               {teamMembers.map((member, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm text-sm font-medium text-gray-800"
+                  className="px-5 py-2.5 rounded-full bg-white border border-gray-200 shadow-sm text-sm font-medium text-gray-800 hover:border-blue-300 transition-colors"
                 >
                   {member.name}
                 </span>
@@ -172,7 +178,7 @@ export function Team() {
             </div>
           </div>
         </div>
-      </div >
-    </section >
+      </div>
+    </section>
   )
 }

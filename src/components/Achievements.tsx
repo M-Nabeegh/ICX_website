@@ -14,9 +14,9 @@ export function Achievements() {
     },
     {
       icon: Target,
-      title: "6 MOUs Signed",
+      title: "3 MOUs Signed",
       description: "Record-breaking partnerships",
-      status: "Q1 2025 Achievement"
+      status: "Active Partnerships"
     },
     {
       icon: TrendingUp,

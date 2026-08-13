@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react'
 
-type RouteType = 'home' | 'mou-shah' | 'mou-hitms' | 'mou-iiui' | 'mou-pakuraan' | 'mou-talpur' | 'mou-iconsult'
+type RouteType = 'home' | 'mou-shah' | 'mou-plushnatural' | 'mou-sabatrust' | 'mou-hitms' | 'mou-iiui' | 'mou-pakuraan' | 'mou-talpur' | 'mou-iconsult'
 
 interface RouterContextType {
   currentRoute: RouteType

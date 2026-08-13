@@ -16,44 +16,23 @@ export function Partnerships() {
       route: "mou-shah"
     },
     {
-      name: "HITMS University",
-      type: "IGV",
-      programName: "Global Classroom",
-      icon: GraduationCap,
-      category: "Education",
-      route: "mou-hitms"
-    },
-    {
-      name: "IIUI School",
-      type: "IGV",
-      programName: "Green Leaders",
-      icon: GraduationCap,
-      category: "Education",
-      route: "mou-iiui"
-    },
-    {
-      name: "PakUraan Foundation",
-      type: "IGV",
-      programName: "Global Classroom",
-      icon: Heart,
-      category: "NGO",
-      route: "mou-pakuraan"
-    },
-    {
-      name: "Talpur Foundation",
-      type: "IGV",
-      programName: "On the Map",
-      icon: Heart,
-      category: "NGO",
-      route: "mou-talpur"
-    },
-    {
-      name: "iConsult",
+      name: "Plush Natural",
       type: "IGT",
-      programName: "Consulting Intern",
+      programName: "Content Creation and Marketing Intern",
       icon: Building,
       category: "Corporate",
-      route: "mou-iconsult"
+      route: "mou-plushnatural",
+      salary: "90,000 (PKR) salary",
+      duration: "6 Weeks",
+      location: "Lahore, Pakistan"
+    },
+    {
+      name: "Saba Trust",
+      type: "IGV",
+      programName: "Global Classroom",
+      icon: Heart,
+      category: "NGO",
+      route: "mou-sabatrust"
     }
   ]
 
@@ -89,15 +68,15 @@ export function Partnerships() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <Card className="p-6 text-center bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-blue-900">6</div>
+              <div className="text-4xl font-bold text-blue-900">3</div>
               <div className="text-blue-700 font-medium">Total MOUs Signed</div>
-              <div className="text-sm text-blue-600">First Half of 2025</div>
+              <div className="text-sm text-blue-600">Active Partnerships</div>
             </div>
           </Card>
           
           <Card className="p-6 text-center bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-purple-900">5</div>
+              <div className="text-4xl font-bold text-purple-900">2</div>
               <div className="text-purple-700 font-medium">IGV Partnerships</div>
               <div className="text-sm text-purple-600">Social Impact Focus</div>
             </div>
@@ -113,7 +92,7 @@ export function Partnerships() {
         </div>
 
         {/* Partnerships Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {partnerships.map((partnership, index) => (
             <Card 
               key={index} 
@@ -147,22 +126,25 @@ export function Partnerships() {
                 {/* Program Details */}
                 <div className="space-y-3">
                   <div className="text-center">
-                    <div className="text-lg font-semibold text-gray-800 mb-3">
+                    <div className="text-lg font-semibold text-gray-800 mb-2">
                       {partnership.programName}
                     </div>
                     
-                    {/* Program Icons or Salary Info */}
-                    {partnership.name === "iConsult" ? (
-                      <div className="text-lg font-bold text-green-600">
-                        100,000 (PKR) salary
+                    {/* Program Salary Info or Amenities */}
+                    {partnership.salary ? (
+                      <div className="space-y-1">
+                        <div className="text-lg font-bold text-green-600">
+                          {partnership.salary}
+                        </div>
+                        <div className="text-xs font-medium text-gray-500">
+                          ⏱ {partnership.duration} • 📍 {partnership.location}
+                        </div>
                       </div>
                     ) : (
                       <div className="flex justify-center gap-2 flex-wrap">
                         <Home className="w-5 h-5 text-blue-600" />
                         <Car className="w-5 h-5 text-purple-600" />
-                        {partnership.name !== "Talpur Foundation" && partnership.name !== "IIUI School" && (
-                          <Utensils className="w-5 h-5 text-orange-600" />
-                        )}
+                        <Utensils className="w-5 h-5 text-orange-600" />
                       </div>
                     )}
                   </div>
