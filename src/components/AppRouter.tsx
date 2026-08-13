@@ -8,6 +8,8 @@ import { Products } from "./Products"
 import { Achievements } from "./Achievements"
 import { Footer } from "./Footer"
 import { ShahInternationalMOU } from "./mou-pages/ShahInternationalMOU"
+import { PlushNaturalMOU } from "./mou-pages/PlushNaturalMOU"
+import { SabaTrustMOU } from "./mou-pages/SabaTrustMOU"
 import { HITMSMOU } from "./mou-pages/HITMSMOU"
 import { IIUMOU } from "./mou-pages/IIUMOU"
 import { PakUraanMOU } from "./mou-pages/PakUraanMOU"
@@ -37,6 +39,10 @@ export function AppRouter() {
   switch (currentRoute) {
     case 'mou-shah':
       return <ShahInternationalMOU />
+    case 'mou-plushnatural':
+      return <PlushNaturalMOU />
+    case 'mou-sabatrust':
+      return <SabaTrustMOU />
     case 'mou-hitms':
       return <HITMSMOU />
     case 'mou-iiui':

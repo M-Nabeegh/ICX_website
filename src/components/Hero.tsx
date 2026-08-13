@@ -1,7 +1,7 @@
 import { Button } from "./ui/button"
 import { Globe, ArrowRight, Users } from "lucide-react"
 import { motion } from "framer-motion"
-import teamImage from "../assets/2246c86427cc15fa9bc75e3c6618d880f8769999.png"
+import teamImage from "../assets/group.png"
 
 // Animation variants for mobile optimization
 const fadeInUp = {
